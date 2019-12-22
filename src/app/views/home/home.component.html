@@ -1,3 +1,17 @@
-<div>
-  <h1>Welcome to Angular</h1>
+<div class="home_container">
+  <section>
+    <h1 class="home_title">Welcome to Angular</h1>
+    <ul class="card_list">
+      <li class="list_item" *ngFor="let item of cardList;let i = index" >
+        <div class="card_content">
+          <div class="card_front">
+            <span>{{i+1}}</span>
+          </div>
+          <div class="card_back" (click)="goTo(item.path)">
+            <span>{{item.name}}</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
 </div>

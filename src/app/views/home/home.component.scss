@@ -1,0 +1,85 @@
+.home_container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    section{
+        width: 1000px;
+        height: 100%;
+        background: #abcdef;
+        .home_title{
+            margin: 0;
+        }
+        .card_list{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .list_item{
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                margin-left: 10px;
+                .card_content{
+                    width: 200px;
+                    height: 323px;
+                    transform-style: preserve-3d;
+                    perspective: 800px;
+                    position: relative;
+                    .card_front{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top:0;
+                        left: 0;
+                        z-index: 2;
+                        backface-visibility: hidden;
+                        transition: 1s;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        box-shadow: 0 0 20px 0px rgba(0,0,0,0.7);
+                        background: url('./../../../assets/img/back_card.png') no-repeat;
+                        background-size: 100% 100%;
+                        span{
+                            color: #fff;
+                            margin-top: -30px;
+                            font-size: 18px;
+                        }
+                    }
+                    .card_back{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top:0;
+                        left: 0;
+                        transform: rotateY(-180deg);
+                        backface-visibility: hidden;
+                        transition: 1s;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: lightcoral;
+                        box-shadow: 0 0 20px 0px rgba(0,0,0,0.7);
+                        cursor: pointer;
+                        span{
+                            color: #fff;
+                            font-size: 24px;
+                            text-align: center;
+                        }
+                    }
+                    &:hover{
+                        .card_front{
+                            transform: rotateY(180deg);
+                        }
+                        .card_back{
+                            transform: rotateY(0deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
