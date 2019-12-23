@@ -62,13 +62,16 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        background: lightcoral;
+                        background: rgba(187,43,53,1);
                         box-shadow: 0 0 20px 0px rgba(0,0,0,0.7);
+                        background: url('./../../../assets/img/front_card.jpg') no-repeat;
+                        background-size: 100% 100%;
                         cursor: pointer;
                         span{
-                            color: #fff;
+                            color: #000;
                             font-size: 24px;
                             text-align: center;
+                            padding:0 10px;
                         }
                     }
                     &:hover{

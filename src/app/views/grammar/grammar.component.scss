@@ -1,14 +1,27 @@
 .grammar_container{
     width: 100%;
     height: 100vh;
+    overflow: auto;
     section{
         width: 1000px;
-        height: 100%;
         margin: 0 auto;
+        padding-bottom: 30px;
         background: lightseagreen;
         &::before{
             display: table;
             content: "";
+        }
+        .describe_text{
+            text-indent: 2em;
+        }
+        .granmar_img{
+            width: 90%;
+            margin: 0 auto;
+            display: block;
+        }
+        .warning_text{
+            color: red;
+            text-indent: 2em;
         }
     }
 }

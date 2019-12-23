@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
       path:'files'
     },
     {
-      name:'语法糖',
+      name:'语法糖和生命周期',
       path:'grammar'
     },
     {
