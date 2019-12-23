@@ -7,8 +7,9 @@
         width: 1000px;
         height: 100%;
         background: #abcdef;
-        .home_title{
-            margin: 0;
+        &::before{
+            display: table;
+            content: "";
         }
         .card_list{
             width: 100%;

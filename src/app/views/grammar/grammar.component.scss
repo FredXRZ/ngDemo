@@ -1,4 +1,4 @@
-.config_container{
+.grammar_container{
     width: 100%;
     height: 100vh;
     section{
@@ -9,9 +9,6 @@
         &::before{
             display: table;
             content: "";
-        }
-        .code_text{
-            color: #00f;
         }
     }
 }
