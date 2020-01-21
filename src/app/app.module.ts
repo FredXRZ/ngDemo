@@ -10,6 +10,7 @@ import { ConfigComponent } from './views/config/config.component';
 import { FilesComponent } from './views/files/files.component';
 import { GrammarComponent } from './views/grammar/grammar.component';
 import { RouterComponent } from './views/router/router.component';
+import { NewYearComponent } from './views/new-year/new-year.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { RouterComponent } from './views/router/router.component';
     ConfigComponent,
     FilesComponent,
     GrammarComponent,
-    RouterComponent
+    RouterComponent,
+    NewYearComponent
   ],
   imports: [
     BrowserModule,

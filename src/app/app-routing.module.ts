@@ -6,6 +6,7 @@ import {ConfigComponent} from './../app/views/config/config.component';
 import {FilesComponent} from './../app/views/files/files.component';
 import {GrammarComponent} from './../app/views/grammar/grammar.component';
 import {RouterComponent} from './../app/views/router/router.component';
+import { NewYearComponent } from './views/new-year/new-year.component';
 
 const routes:Routes = [
   {
@@ -27,6 +28,10 @@ const routes:Routes = [
   {
     path:'router',
     component:RouterComponent
+  },
+  {
+    path:'year',
+    component: NewYearComponent
   },
   {
     path:'',
